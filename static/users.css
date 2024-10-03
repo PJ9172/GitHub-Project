@@ -1,7 +1,7 @@
 body {
     /* background-color: #2b2b2b; */
     background-color: white;
-    color: white;
+    color: black;
     /* font-family: 'Lucida Calligraphy'; */
 
 }
@@ -12,7 +12,7 @@ body {
     margin-top: 80px;
     padding-bottom: 20px;
     padding-top: 20px;
-    background-color: #171818;
+    background-color: #4FC3F7;
     border-radius: 10px;
     box-shadow: 5px 5px 10px #585858;
     display: flex;
@@ -24,11 +24,12 @@ body {
 .profile {
     width: 40%;
     /* border: blue 1px solid; */
-    border-right: 3px solid #585858;
+    /* border-right: 3px solid #585858; */
+    border-right: 3px solid whitesmoke;
 }
 
 .avtar {
-    border: 1px solid white;
+    border: 1px solid black;
     height: 180px;
     width: 180px;
     border-radius: 50%;
@@ -54,18 +55,19 @@ li {
 }
 
 .box {
-    height: 80px;
-    border: 1px solid grey;
+    height: auto;
+    /* border: 1px solid grey; */
     /* width: 400px; */
     margin-top: 20px;
     text-align: justify;
-    box-shadow: 5px 5px 10px #292929;
     padding: 10px;
     cursor: pointer;
+    background-color: #81D4FA;
 }
 
 .box:hover {
-    background-color: rgb(141, 141, 141);
+    box-shadow: 5px 5px 10px #292929;
+    /* height: auto; */
     color: black;
     font-weight: bolder;
     border-radius: 10px;
@@ -98,7 +100,7 @@ li {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #707070;
+    background: whitesmoke;
 }
 
 /* Handle on hover */
