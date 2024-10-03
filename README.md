@@ -35,6 +35,6 @@ This project is a GitHub user finder web application where users can enter a Git
 2. Open your browser and navigate to `http://localhost:3000/` to access the main page.
 
 3. If your `port:3000` is busy then change it according to your availability. Change the code in `main.go` & run it again.
-```go
-err := http.ListenAndServe(":your_available_port", nil)
-```
+   ```go
+   err := http.ListenAndServe(":your_available_port", nil)
+   ```
