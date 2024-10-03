@@ -1,0 +1,107 @@
+body {
+    /* background-color: #2b2b2b; */
+    background-color: white;
+    color: white;
+    /* font-family: 'Lucida Calligraphy'; */
+
+}
+
+.container {
+    width: 50%;
+    /* border: 1px solid black; */
+    margin-top: 80px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #171818;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #585858;
+    display: flex;
+    justify-content: space-around;
+    letter-spacing: 3px;
+    height: 400px;
+}
+
+.profile {
+    width: 40%;
+    /* border: blue 1px solid; */
+    border-right: 3px solid #585858;
+}
+
+.avtar {
+    border: 1px solid white;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+li {
+    list-style: none;
+    line-height: 25px;
+}
+
+.repos {
+    display: block;
+    overflow: auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.box {
+    height: 80px;
+    border: 1px solid grey;
+    /* width: 400px; */
+    margin-top: 20px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px #292929;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: rgb(141, 141, 141);
+    color: black;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.row1 {
+    height: 50%;
+    /* padding-top: 15px; */
+    /* padding-left: 40px; */
+
+}
+
+.row2 {
+    margin-top: 10px;
+    height: 50%;
+    /* padding-top: 15px; */
+    /* padding-left: 40px; */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+    /* height: 320px; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #707070;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: whitesmoke;
+}

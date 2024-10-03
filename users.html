@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git-Project</title>
+    <link rel="stylesheet" href="./static/users.css">
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <div class="profile">
+                <div class="avtar" id="avtar"></div>
+                <div class="info">
+                    <li id="username"></li>
+                    <li id="Name"></li>
+                    <li id="bio"></li>
+                    <li id="followers"></li>
+                    <li id="following"></li>
+                    <li id="public_repos"></li>
+                </div>
+            </div>
+            <div class="repos" id="repos">
+
+            </div>
+        </div>
+    </center>
+
+    <script>
+        var avtar = document.getElementById("avtar")
+        var username = document.getElementById("username")
+        var Name = document.getElementById("Name")
+        var bio = document.getElementById("bio")
+        var followers = document.getElementById("followers")
+        var following = document.getElementById("following")
+        var public_repos = document.getElementById("public_repos")
+        var repos = document.getElementById("repos")
+
+        var jsonData = {{.}}
+
+        avtar.style.backgroundImage = `url(${jsonData.avatar_url})`
+        username.innerText = `Username : ${jsonData.login}`
+        Name.innerText = `Name : ${jsonData.name}`
+        bio.innerText = `Bio : ${jsonData.bio}`
+        followers.innerText = `Followers : ${jsonData.followers}`
+        following.innerText = `Following : ${jsonData.following}`
+        public_repos.innerText = `Public_repos : ${jsonData.public_repos}`
+
+        // console.log(jsonData.repos)
+
+        jsonData.repos.map((e,i)=>{
+            var box = document.createElement("div")
+            box.classList.add("box")
+            repos.appendChild(box)
+            box.innerHTML=`<div class="row1">Repo_Name : ${e.name}</div>
+            <div class="row2">Description : ${e.description}</div>`
+            box.addEventListener("click",function(){
+                window.location.href= `${e.svn_url}`
+            })
+        })
+    </script>
+
+</body>
+
+</html>
