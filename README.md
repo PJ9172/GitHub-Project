@@ -38,3 +38,12 @@ This project is a GitHub user finder web application where users can enter a Git
    ```go
    err := http.ListenAndServe(":your_available_port", nil)
    ```
+### Screenshots
+
+- Landing Page : 
+
+   ![landing_page](screenshots/landing_page.png)
+
+- User Info Page : 
+
+   ![user_info](screenshots/user_info.png)
